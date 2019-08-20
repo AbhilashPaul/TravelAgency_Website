@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC|Handlee|Concert+One|PT+Sans+Caption');
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Baloo|Merienda+One&display=swap');
+/*
+* {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+  }
+*/
+/*-------------------------------------
+	root element and body styling
+---------------------------------------*/
+html {
+    background-color: #022950;
+    font-family: 'Karla', sans-serif;
+    font-size: 1vw; /* set font size */
+    min-width: 320px; /* typical smartphone screen width */
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: auto;
+}
+body {
+    background-color: #60d4cb;
+    font-family: 'Karla', sans-serif;
+    font-size: 1vw;
+    width: 80%;
+    height: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 2%;
+    min-height: 100%;
+    overflow: auto;
+    scrollbar-width: none;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: make scrollbar invisible */
+}
+/*-------------------------------------
+		header section 
+--------------------------------------*/
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: flex-start;
+    position: static;
+    top: 50px;
+    text-align: left; 
+    width: 100%;
+    background-color: #022950;
+}
+#logo {
+    border-radius: 50%;
+    width: 4vw;
+    height: auto;
+    margin: 10px;
+}
+.title{
+    font-family: 'Nunito', sans-serif;
+    font-size: 3rem;
+    color: #ffffff;
+    text-align: center;
+    margin-left: 20px;
+}
+
+#validitymessage{
+    color: #942205;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 50%;
+    height: auto;
+    position: absolute;
+    left: 23%;
+    top: 70%;
+}
+
+#regitrationstatusmessage{
+    color: #130b5f;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 50%;
+    height: auto;
+    position: absolute;
+    left: 25vw;
+    top: 30%;
+}
+
+/* Images collection section */
+#loginformwrapper {
+    width: 20%;
+    height: auto;
+    position: absolute;
+    left: 40%;
+    top: 40%;
+}
+#imagedescriptions {
+    border-spacing: 2px;
+    border-collapse: collapse;
+    font-family: 'Baloo', cursive;
+    font-size: 1rem;
+    margin-left: 15%;
+    height: 100%;
+    margin-top: 3%;
+    float: left;
+}
+
+th, td {
+    height: 30px;
+    width:auto;
+    text-align: center;
+    color: #022950;
+}
+
+
+.table{
+    width:30%;
+}
+
+#linkstablecontainer{
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+    height: auto;
+}
+    
+#agenttablecontainer{
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+    height: auto;
+}
+
+#travelimage {
+    border: 2px ridge rgb(1, 1, 41);
+    border-radius: 15px;
+    /* sizing of the images according to the viewport size */
+    width: 450px;
+    height: 226px;
+    visibility: visible;
+    display: inline-block;
+}
+/* Navigation section */
+.navigationhomepage{
+    position: fixed;
+    left: 10%;
+    bottom: 20px; /* pin to the bottom of the page. */
+    text-align: center;
+    width: 80vw;
+    height: auto;
+    margin-bottom: 20px;
+} 
+.navigationimages {
+    border-radius: 50%;
+    width: auto;
+    height: 7vw;
+}
+
+/* --------------------------------------------------
+  Copyright message
+ ----------------------------------------------------*/
+ .copyright {
+    position: absolute;
+    padding: 20px;
+    left: 0;
+    bottom: 0; /* pin to the bottom of the page. */
+    font-size: 0.8rem;
+    font-weight: bold;
+    width: 100%;
+    height: 20px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+/* Styling for Navigation side bar on register and contact pages */ 
+.navigation {
+    position: fixed;
+    float:right;
+    right:12%;
+    z-index: 1;
+    top: 5%;
+}
+#homeimage, #signupimage, #contactimage, #linkimage {
+    width: 6vw;
+    height: auto;
+    display: block;
+}
+
+#homeimagewrapper, #signupimagewrapper, #contactimagewrapper, #linkimagewrapper {
+    padding: 5px;
+}
+
+/* Start of registration form styling */
+
+#form-outer {
+    background-color: #60d4cb;
+    width: 75%;
+    height: 100%;
+    margin-left: 12.5%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 1rem;
+    overflow: hidden;
+}
+#registrationformwrapper {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    overflow: auto;
+}
+#formtitle {
+    font-family: 'Concert One', cursive;
+    text-align: left;
+    margin-left: 5%;
+}
+
+.statusmessage {
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 1.6rem;
+    color: #160303;
+    margin-left: 10px;
+    text-align: center;
+}
+#createaccountmessage {
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 1.2rem;
+    color: #160303;
+    margin-left: 30%;
+    width: 60%;
+    padding: 20px;
+    display: inline-block;
+}
+div > p {
+    float: left;
+}
+div > a {
+    float: left;
+    color: rgb(46, 1, 1);
+}
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 900;
+}
+#position {
+    height: 30px;
+    width: 21vw;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid #c0c0c0;
+    border-radius: 2px;
+}
+
+#agencyid {
+    height: 30px;
+    width: 21vw;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid #c0c0c0;
+    border-radius: 2px;
+}
+
+#logout{
+    /*font-family: 'PT Sans Caption', sans-serif;
+    font-size: 1.2rem;
+    margin-left: 10px;
+    text-align: right;
+    color:white;*/
+    color: #043858 !important;
+    position: absolute;
+    right: 15%;
+    top: 10%;
+}
+.formrow {
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+    vertical-align: middle;
+}
+/* input label */
+.labels {
+    display: inline-block;
+    text-align: right;
+    width: 20%;
+    padding: 5px;
+    font-weight: bold;
+    vertical-align: center;
+    margin-top: 10px;
+}
+
+/* Input boxes */
+.forminput {
+    display: inline-block;
+    text-align: center;
+    width: 25vw;
+    vertical-align: middle;
+}
+/* input field */
+.input-field {
+    height: 20px;
+    width: 20vw;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid #c0c0c0;
+    border-radius: 2px;
+}
+.fielddescription {
+    display: inline-block;
+    visibility: hidden;
+    vertical-align: middle;
+    font: sans-serif;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-align: left;
+    width: 28%;
+    padding: 3px;
+    margin-right: 5px;
+    color: rgb(4, 43, 12);
+}
+.formvalidationmessage {
+    display: inline-block;
+    text-align: left;
+    color: rgb(145, 13, 13);
+    font-style: italic;
+    font-weight: bold;
+    font-size: 0.9rem;
+    width: 22vw;
+    vertical-align: top;
+    margin-left: 15vw;
+    visibility: hidden;
+}
+/* drop down menu for selction of province */
+#province {
+    height: 30px;
+    width: 21vw;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid #c0c0c0;
+    border-radius: 2px;
+}
+/* submit and reset buttons */
+#buttons{
+    text-align: center;
+}
+
+#submit, #reset {
+    background-color: #043858;
+    border-radius: 4px;
+    color: white;
+    font-size: 1rem;
+    height: 40px;
+    width: 96px;
+    margin: 10px;
+    border: 0px solid;
+}
+/* End of registration form styling */
+
+
+.fas {
+    color:white !important;
+}
+
+/* Contact us page specific styling */
+
+@media only screen and (max-width: 414px) and (min-width: 376px) {
+    html, body {
+        font-size: 10pt;
+    }
+}
+
+@media only screen and (max-width: 375px)and (min-width: 321px) {
+    html, body {
+        font-size: 8pt;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    html, body {
+        font-size: 6pt;
+    }
+}
